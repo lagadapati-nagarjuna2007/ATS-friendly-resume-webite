@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeForge - ATS-Optimized Resume Builder for Students</title>
+    <meta name="description" content="Create ATS-friendly professional resumes in minutes. Free resume builder with 90%+ ATS score — designed for students and fresh graduates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="4" width="18" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <rect x="8" y="2" width="18" height="22" rx="2" fill="currentColor" opacity="0.3"/>
+                        <line x1="6" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="6" y1="14" x2="14" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="6" y1="18" x2="16" y2="18" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <span>Resume<span class="logo-accent">Forge</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#ats-score">ATS Score</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#templates">Templates</a>
+            </div>
+            <a href="builder.html" class="nav-cta">Build Resume →</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Free for Students · 90%+ ATS Score Guaranteed
+            </div>
+            <h1 class="hero-title">
+                Build a <span class="gradient-text">ATS-Friendly Resume</span> That Gets Interviews
+            </h1>
+            <p class="hero-subtitle">
+                The smartest resume builder for students and fresh graduates. Keyword matching, date validation, action verb tips — everything needed to beat ATS and land the interview.
+            </p>
+            <div class="hero-actions">
+                <a href="builder.html" class="btn btn-primary">
+                    <span>Start Building Now</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#ats-score" class="btn btn-secondary">See ATS Features</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="5000">0</span>+
+                    <span class="stat-label">Resumes Created</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="93">0</span>%
+                    <span class="stat-label">Avg ATS Score</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Pro Templates</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-preview">
+            <div class="preview-card">
+                <div class="preview-resume">
+                    <div class="mini-resume">
+                        <div class="mini-header"></div>
+                        <div class="mini-contact"></div>
+                        <div class="mini-line w80"></div>
+                        <div class="mini-section-title"></div>
+                        <div class="mini-line w100"></div>
+                        <div class="mini-line w90"></div>
+                        <div class="mini-section-title"></div>
+                        <div class="mini-line w70"></div>
+                        <div class="mini-line w85"></div>
+                        <div class="mini-section-title"></div>
+                        <div class="mini-line w95"></div>
+                        <div class="mini-line w60"></div>
+                        <div class="mini-line w80"></div>
+                    </div>
+                </div>
+                <div class="preview-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">Built for <span class="gradient-text">ATS Success</span></h2>
+                <p class="section-subtitle">Every feature is designed to push your resume past the 90% ATS threshold so real humans see it.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon icon-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Job Keyword Matcher</h3>
+                    <p>Paste a job description and instantly see which keywords are missing from your resume. Close the gap before you apply.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>ATS Score Checker</h3>
+                    <p>Real-time score panel checks formatting, keywords, sections, and dates — so you know exactly where you stand.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Pure Text PDF</h3>
+                    <p>Downloads as real selectable text — not an image. ATS parsers read every word, guarantee your data is never lost.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-teal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Action Verb Suggestions</h3>
+                    <p>Intelligent prompts guide you to start every bullet with strong action verbs — the #1 factor ATS scoring tools reward.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-orange">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9H21" stroke="currentColor" stroke-width="2"/><path d="M9 21V9" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Live Preview</h3>
+                    <p>See your resume update in real-time as you type. What you see is exactly what you get — no surprises on download.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Standard Section Names</h3>
+                    <p>Sections are named exactly as ATS systems expect: Education, Work Experience, Skills, Certifications — nothing exotic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATS SCORE SECTION -->
+    <section class="ats-section" id="ats-score">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag" style="color:#34d399">ATS Optimization</span>
+                <h2 class="section-title">What Makes Our Resumes Score <span style="color:#34d399">93%+</span></h2>
+                <p class="section-subtitle">We've engineered every detail against how real ATS systems parse and score resumes.</p>
+            </div>
+            <div class="ats-checklist">
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Real Selectable Text PDF</h4>
+                        <p>jsPDF generates actual text — not a screenshot. ATS reads 100% of your content.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Keyword Density Check</h4>
+                        <p>Paste a job description — we highlight which keywords you're missing before you download.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Standard Date Format</h4>
+                        <p>All date fields enforce "Month YYYY" format — the pattern ATS systems parse most reliably.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Action Verb Prompts</h4>
+                        <p>Built-in suggestions like "Built, Developed, Optimized" help you score higher on impact scoring.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Single-Column Layout</h4>
+                        <p>No tables, columns, or graphics. Pure top-to-bottom flow that every ATS parser handles perfectly.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>No Images or Graphics</h4>
+                        <p>Photos and icons are stripped from the PDF — ATS cannot read images and penalizes them.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Helvetica Safe Font</h4>
+                        <p>Helvetica is the most universally parsed font — zero encoding issues across all ATS platforms.</p>
+                    </div>
+                </div>
+                <div class="ats-item">
+                    <div class="ats-check">✓</div>
+                    <div class="ats-item-text">
+                        <h4>Smart File Naming</h4>
+                        <p>Auto-named as "FirstName_LastName_Resume.pdf" — the exact format recruiters and ATS expect.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Simple Process</span>
+                <h2 class="section-title">Get Your ATS-Ready Resume in <span class="gradient-text">4 Easy Steps</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Fill Your Details</h3>
+                        <p>Enter your personal info, education, skills, projects, and experience in our guided step-by-step form.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 20H32M32 20L24 12M32 20L24 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Match Job Keywords</h3>
+                        <p>Paste the job description in our matcher. We show which keywords are missing so you can close the gap.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 20H32M32 20L24 12M32 20L24 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Check ATS Score</h3>
+                        <p>Live ATS score panel shows your current score with specific fixes. Aim for 90+ before downloading.</p>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 20H32M32 20L24 12M32 20L24 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Download PDF</h3>
+                        <p>Download your 90%+ ATS-optimized PDF. Pure text, safe font, correct layout — ready to submit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEMPLATES -->
+    <section class="templates-section" id="templates">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Templates</span>
+                <h2 class="section-title">Choose Your <span class="gradient-text">ATS-Safe Template</span></h2>
+                <p class="section-subtitle">All templates use single-column layouts and standard fonts — fully ATS-compatible.</p>
+            </div>
+            <div class="templates-showcase">
+                <div class="template-card active" id="template-classic">
+                    <div class="template-preview classic-preview">
+                        <div class="tp-header">
+                            <div class="tp-name"></div>
+                            <div class="tp-contact"></div>
+                        </div>
+                        <div class="tp-section">
+                            <div class="tp-title blue-line"></div>
+                            <div class="tp-text w90"></div>
+                            <div class="tp-text w80"></div>
+                        </div>
+                        <div class="tp-section">
+                            <div class="tp-title blue-line"></div>
+                            <div class="tp-text w85"></div>
+                            <div class="tp-text w70"></div>
+                        </div>
+                        <div class="tp-section">
+                            <div class="tp-title blue-line"></div>
+                            <div class="tp-text w95"></div>
+                            <div class="tp-text w60"></div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Classic Professional</h3>
+                        <span class="template-tag">Most Popular</span>
+                    </div>
+                </div>
+                <div class="template-card" id="template-modern">
+                    <div class="template-preview minimal-preview">
+                        <div class="tp-header centered">
+                            <div class="tp-name"></div>
+                            <div class="tp-contact"></div>
+                        </div>
+                        <div class="tp-divider"></div>
+                        <div class="tp-section">
+                            <div class="tp-title"></div>
+                            <div class="tp-text w85"></div>
+                            <div class="tp-text w70"></div>
+                        </div>
+                        <div class="tp-divider thin"></div>
+                        <div class="tp-section">
+                            <div class="tp-title"></div>
+                            <div class="tp-text w90"></div>
+                            <div class="tp-text w75"></div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Modern Centered</h3>
+                        <span class="template-tag">Clean</span>
+                    </div>
+                </div>
+                <div class="template-card" id="template-minimal">
+                    <div class="template-preview minimal-preview">
+                        <div class="tp-header centered">
+                            <div class="tp-name"></div>
+                            <div class="tp-contact"></div>
+                        </div>
+                        <div class="tp-divider thin"></div>
+                        <div class="tp-section">
+                            <div class="tp-title"></div>
+                            <div class="tp-text w85"></div>
+                        </div>
+                        <div class="tp-divider thin"></div>
+                        <div class="tp-section">
+                            <div class="tp-title"></div>
+                            <div class="tp-text w90"></div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Minimal Clean</h3>
+                        <span class="template-tag">Elegant</span>
+                    </div>
+                </div>
+            </div>
+            <div class="templates-cta">
+                <a href="builder.html" class="btn btn-primary">
+                    <span>Start Building for Free</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                <rect x="2" y="4" width="18" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <rect x="8" y="2" width="18" height="22" rx="2" fill="currentColor" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <span>Resume<span class="logo-accent">Forge</span></span>
+                    </a>
+                    <p>The ATS-optimized resume builder designed for students and fresh graduates. 93% average ATS score.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="builder.html">Resume Builder</a>
+                        <a href="#templates">Templates</a>
+                        <a href="#features">Features</a>
+                        <a href="#ats-score">ATS Score</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Resume Tips</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ResumeForge. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>

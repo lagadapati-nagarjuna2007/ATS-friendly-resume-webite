@@ -1,0 +1,28 @@
+# ============================================================
+# .gitignore — ResumeForge / Smart Food Ordering System
+# ============================================================
+
+# ⚠ NEVER push .env — it contains your API keys!
+.env
+.env.local
+.env.production
+
+# Node modules — install with: npm install
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output (if any)
+dist/
+build/
+
+# Editor folders
+.vscode/
+.idea/
