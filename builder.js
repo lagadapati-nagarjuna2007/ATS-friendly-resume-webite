@@ -710,15 +710,16 @@ function downloadPDF() {
 
     function writeText(text, size, style, color, indent) {
         indent = indent || 0;
+        size = size || 10;
         doc.setFont('helvetica', style || 'normal');
-        doc.setFontSize(size || 10);
+        doc.setFontSize(size);
         doc.setTextColor(...(color || [51, 51, 51]));
         doc.setCharSpace(0);
-        var lines = doc.splitTextToSize(text, CW - indent);
+        var lines = safeWrapText(text, CW - indent);
         lines.forEach(function(line) {
             needPage(4);
             doc.text(line.toString(), ML + indent, y, { charSpace: 0, isInputRtl: false });
-            y += (size || 10) * 0.40 + 0.8;
+            y += size * 0.40 + 0.8;
         });
     }
 
@@ -771,7 +772,7 @@ function downloadPDF() {
         doc.setFontSize(size);
         doc.setTextColor(30, 30, 30);
         doc.setCharSpace(0);
-        var leftLines = doc.splitTextToSize(left, CW * 0.72);
+        var leftLines = safeWrapText(left, CW * 0.72);
         doc.text(leftLines[0].toString(), ML, y, { charSpace: 0, isInputRtl: false });
         if (right) {
             doc.setFont('helvetica', 'normal');
@@ -805,7 +806,7 @@ function downloadPDF() {
         doc.setFont('helvetica', 'normal'); doc.setFontSize(9); doc.setTextColor(85, 85, 85);
         doc.setCharSpace(0);
         var cStr = contact.join('  |  ');
-        doc.splitTextToSize(cStr, CW).forEach(function(line) { doc.text(line.toString(), PW / 2, y, { align: 'center', charSpace: 0 }); y += 4; });
+        safeWrapText(cStr, CW).forEach(function(line) { doc.text(line.toString(), PW / 2, y, { align: 'center', charSpace: 0 }); y += 4; });
     }
 
     // LINKS
@@ -815,7 +816,7 @@ function downloadPDF() {
     if (links.length) {
         doc.setFont('helvetica', 'normal'); doc.setFontSize(9); doc.setTextColor(85, 85, 85);
         doc.setCharSpace(0);
-        doc.splitTextToSize(links.join('  |  '), CW).forEach(function(line) { doc.text(line.toString(), PW / 2, y, { align: 'center', charSpace: 0 }); y += 4; });
+        safeWrapText(links.join('  |  '), CW).forEach(function(line) { doc.text(line.toString(), PW / 2, y, { align: 'center', charSpace: 0 }); y += 4; });
     }
 
     doc.setDrawColor(180, 180, 180); doc.setLineWidth(0.3); doc.line(ML, y, PW - MR, y); y += 3;
@@ -885,7 +886,7 @@ function downloadPDF() {
             var lw = doc.getTextWidth(labelStr);
             doc.setFont('helvetica', 'normal'); doc.setTextColor(51, 51, 51);
             doc.setCharSpace(0);
-            var valLines = doc.splitTextToSize(s.val, CW - lw);
+            var valLines = safeWrapText(s.val, CW - lw);
             doc.text(valLines[0].toString(), ML + lw, y, { charSpace: 0 });
             y += 4.5;
             for (var i = 1; i < valLines.length; i++) { needPage(4); doc.text(valLines[i].toString(), ML + lw, y, { charSpace: 0 }); y += 4.5; }
